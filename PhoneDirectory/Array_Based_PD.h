@@ -60,7 +60,8 @@ private:
 	public:
 
 		Directory_Entry() {} // Default no-argument constructor
-
+        
+        //sets the name and number
 		Directory_Entry(std::string the_name, std::string the_number) {
 
             name = the_name;
@@ -68,18 +69,21 @@ private:
 
 		}
 
+        //returns name of entry
 		std::string get_name() const {
 
 			return name;
 
 		}
 
+        //returns entry of number
 		std::string get_number() const {
 
 			return number;
 
 		}
 
+        //sets new number of directory entry
 		void set_number(const std::string& new_number) {
 
             number = new_number;
