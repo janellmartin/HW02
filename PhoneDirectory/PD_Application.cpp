@@ -85,12 +85,14 @@ void do_lookup_entry(Phone_Directory& the_directory)
 	}
 }
 
+//Janell Martin
 void do_remove_entry(Phone_Directory& the_directory) // Exercise 1.8: please complete the function do_remove_entry - Ed/Kent
 {
+    //asks for name then uses the remove entry function to delete it and change the size of the array
 	string name;
 	cout << "Enter name: ";
 	getline(cin, name);
-	// Complete the rest of this function 
+    the_directory.remove_entry(name);
 	
 }
 
